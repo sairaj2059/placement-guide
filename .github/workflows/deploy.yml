@@ -27,6 +27,7 @@ jobs:
 
       - run: npm ci
       - run: npm run build   # next.config.ts sets output: "export" -> creates /out
+      - run: touch ./out/.nojekyll  # belt-and-suspenders: public/.nojekyll should already copy here
 
       - uses: actions/upload-pages-artifact@v3
         with:
