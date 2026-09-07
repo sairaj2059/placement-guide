@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 // Set this to your GitHub repo name when deploying to GitHub Pages as a
 // project site (https://<username>.github.io/<repo-name>/). Leave empty for
 // local dev, Vercel, or a custom domain / user-site (<username>.github.io).
-const repoName = "ds-placement-coach";
+const repoName = "placement-guide";
 const isGithubActions = process.env.GITHUB_ACTIONS === "true";
 
 const nextConfig: NextConfig = {
